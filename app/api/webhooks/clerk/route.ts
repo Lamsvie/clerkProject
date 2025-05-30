@@ -11,7 +11,6 @@ export async function POST(req: NextRequest) {
 		// For this guide, log payload to console
 		const { id } = evt.data;
 		const eventType = evt.type;
-		console.log(eventType);
 
 		if (eventType === "user.created") {
 			const {

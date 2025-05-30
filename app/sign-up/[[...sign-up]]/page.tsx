@@ -12,12 +12,12 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Icons } from '@/components/ui/icons' 
+import { Icons } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 
 export default function SignUpPage() {
   return (
-    <div className="min-h-screen grid w-full grow items-center px-4 sm:justify-center">
+    <div className="grid w-full grow items-center px-4 sm:justify-center">
       <SignUp.Root>
         <Clerk.Loading>
           {(isGlobalLoading) => (

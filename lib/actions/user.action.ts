@@ -8,8 +8,7 @@ import { handleError } from "../utils";
 
 export const createUser = async (user: CreateUserParams) => {
 	try {
-		const conn = await connectToDatabase();
-        console.log(conn);
+		 await connectToDatabase();
         
 
 		const newUser = await User.create(user);
@@ -23,8 +22,7 @@ export const createUser = async (user: CreateUserParams) => {
 
 export async function updateUser(clerkId: string, user: UpdateUserParams) {
 	try {
-		const conn = await connectToDatabase();
-        console.log(conn);
+		await connectToDatabase();
 
 		const updatedUser = await User.findOneAndUpdate({ clerkId }, user, {
 			new: true,
